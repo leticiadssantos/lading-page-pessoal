@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
 
+
 * {
     margin: 0;
     padding: 0;
@@ -40,11 +41,81 @@ body {
     cursor: pointer;
     transition: 0.4s;
 }
-.cabecalho-menu-item:hover{
+
+.cabecalho-menu-item:hover {
     background-color: #7cb951;
     color: #1e2322;
-    
+
 }
+
+
+
+
+
+
+
+/*---------------- MENU DE PESQUISA -----------------*/
+
+.loupe-white {
+    display: none;
+}
+
+.search-box {
+    display: flex;
+    justify-content: space-between;
+    left: 80%;
+    background: #FFF2E7;
+    border-radius: 40px;
+    align-items: center;
+    padding: 5px;
+ 
+
+}
+
+.search-box:hover > .search-text{/*quando eu passar o mouse o .search-text vai receber uma estilização*/
+    width: 250px;
+    padding-left: 20px;
+
+}
+.search-box:hover > .loupe-btn {
+    background: #7cb951;
+}
+.search-box:hover > .loupe-btn .loupe-preta {
+    display: none;
+}
+.search-box:hover > .loupe-btn .loupe-white {
+    display: block;
+}
+::-webkit-input-placeholder {
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #aeaeae;
+}
+
+.search-text {
+    background: none;
+    border: 0;
+    outline: 0;
+    font-size: 12px;
+    padding: 0px;
+    width: 0px;
+    transition: 0.4s;
+}
+.loupe-btn{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+
+
+
+
 
 
 .conteudo {
@@ -78,7 +149,8 @@ body {
     font-family: 'sarala', sans-serif;
     font-weight: 400;
     font-size: 24px;
-    color: #ECD6EC;
+    color: #FFF2E7;
+
 
 }
 
@@ -127,26 +199,31 @@ body {
     font-size: 17px;
     color: #FFF2E7
 }
+
+
+
+
+
+
+
 .rodape {
     display: flex;
     flex-direction: row;
     align-items: center;
     border-top: 0.4px solid #FFF2E7;
     justify-content: center;
-    
+
 }
 
 .rodape-imagem {
     height: 100px;
     padding-top: 0px;
-    
+
 }
+
 .rodape-texto {
     font-family: 'sarala', sans-serif;
     font-weight: 300;
     font-size: 15px;
     color: #FFF2E7
-
-    
 }
-    
