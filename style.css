@@ -6,51 +6,113 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-
+    list-style: none;
 }
 
 body {
-    font-size: 100%;
-    background: linear-gradient(68.15deg, #1e2322 16.62%, #598076 85.61%);
-}
+    background-image: url("/_images/conny-schneider-xuTJZ7uD7PI-unsplash.jpg");
+    background-size:inherit;
+    background-repeat: no-repeat;
+    background-position: right;
 
-.cabecalho {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    padding: 20px;
 }
 
 .cabecalho-imagem {
-    height: 70px;
+    width: 90px;
 }
 
-.cabecalho-menu {
+
+
+.cabecalho {
+    padding: 0%;
     display: flex;
-    gap: 32px;
-
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
 }
 
-.cabecalho-menu-item {
-    font-family: 'sarala', sans-serif;
+.nav-bar ul {
+    display: flex;
     color: #FFF2E7;
+    font-family: 'sarala', sans-serif;
     font-weight: 400;
-    font-size: 18px;
-    padding: 10px;
+    font-size: 17px;
+    
+}
+.nav-bar ul li {
+    padding: 20px;
+    border-radius: 10px;
+    transition: .5s;
+}
+.nav-bar ul li:hover{
+    background: #7cb951;
+    color: black;
     cursor: pointer;
-    transition: 0.4s;
+   
 }
-
-.cabecalho-menu-item:hover {
-    background-color: #7cb951;
-    color: #1e2322;
-
+#check {
+    display: none;
 }
 
 
 
 
+
+   
+
+@media (max-width: 999px) {
+    .checkbtn {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        cursor: pointer;
+        margin: 0;
+    }
+    .checkbtn span {
+        width: 30px;
+        height: 5px;
+        background-color: #FFF2E7;
+    }
+    
+    #check {
+        display: none;
+    }
+    
+
+  
+    .nav-bar{
+        padding: 0;
+    }
+    ul {
+    
+        flex-direction: column;
+        padding: 20px;
+        width: 60%;
+        height: 100%;
+        top: 80px;
+        left: -100%;
+        position: fixed;
+        background-color: rgba(255, 255, 255, 0.077);
+        backdrop-filter: blur(1rem);  
+    }
+    .checkbtn span {
+        display: flex;
+        width: 30px;
+        height: 5px;
+        background-color: #FFF2E7;
+    
+    }
+   
+    #check:checked ~ ul{
+    left: 0;
+    
+}
+
+}
 
 
 
@@ -121,6 +183,10 @@ body {
 .conteudo {
     margin-bottom: 50px;
     border-top: 0.4px solid #FFF2E7;
+    padding: none;
+    
+    
+
 }
 
 .conteudo-primario {
@@ -128,6 +194,9 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    background-color: black;
+   
+   
 
 }
 
@@ -135,6 +204,8 @@ body {
     display: flex;
     flex-direction: column;
     gap: 32px;
+    padding: 20px;
+   
 
 }
 
@@ -150,6 +221,7 @@ body {
     font-weight: 400;
     font-size: 24px;
     color: #FFF2E7;
+    padding-right: 100px;
 
 
 }
@@ -180,6 +252,7 @@ body {
     align-items: center;
     gap: 24px;
     margin-top: 48px;
+    
 
 }
 
@@ -198,6 +271,7 @@ body {
     font-weight: 300;
     font-size: 17px;
     color: #FFF2E7
+    
 }
 
 
@@ -207,12 +281,13 @@ body {
 
 
 .rodape {
+    box-shadow: 4px 5px 4px 10px rgba(0, 0, 0, 0.25);
     display: flex;
     flex-direction: row;
     align-items: center;
-    border-top: 0.4px solid #FFF2E7;
     justify-content: center;
-
+    background-color: rgba(255, 255, 255, 0.077);
+    backdrop-filter: blur(1rem);  
 }
 
 .rodape-imagem {
@@ -227,3 +302,12 @@ body {
     font-size: 15px;
     color: #FFF2E7
 }
+
+
+
+
+
+
+
+
+
