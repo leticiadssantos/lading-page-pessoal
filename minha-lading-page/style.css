@@ -36,7 +36,16 @@ body {
     color: #FFF2E7;
     font-weight: 400;
     font-size: 18px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.4s;
 }
+.cabecalho-menu-item:hover{
+    background-color: #7cb951;
+    color: #1e2322;
+    
+}
+
 
 .conteudo {
     margin-bottom: 50px;
@@ -85,6 +94,10 @@ body {
     font-size: 24px;
 }
 
+.botao-conteudo:hover {
+    background-color: #7cb951;
+}
+
 .conteudo-principal-imagem {
     height: 430px;
 }
@@ -109,5 +122,31 @@ body {
 }
 
 .conteudo-secundario-texto {
+    font-family: 'sarala', sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+    color: #FFF2E7
+}
+.rodape {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-top: 0.4px solid #FFF2E7;
+    justify-content: center;
     
 }
+
+.rodape-imagem {
+    height: 100px;
+    padding-top: 0px;
+    
+}
+.rodape-texto {
+    font-family: 'sarala', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    color: #FFF2E7
+
+    
+}
+    
