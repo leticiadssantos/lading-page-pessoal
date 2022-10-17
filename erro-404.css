@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+
+
+* {
+    margin: none;
+    padding: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background: black;
+}
+
+
+.cabecalho-imagem {
+    width: 90px;
+}
+
+
+
+.cabecalho {
+    padding: 0%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+}
+
+.nav-bar ul {
+    display: flex;
+    color: #FFF2E7;
+    font-family: 'sarala', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    
+}
+.nav-bar ul li {
+    padding: 20px;
+    border-radius: 10px;
+    transition: .5s;
+}
+.nav-bar ul li:hover{
+    background: #7cb951;
+    color: black;
+    cursor: pointer;
+   
+}
+#check {
+    display: none;
+}
+
+
+
+
+
+   
+
+@media (max-width: 999px) {
+    .checkbtn {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        cursor: pointer;
+        margin: 0;
+    }
+    .checkbtn span {
+        width: 30px;
+        height: 5px;
+        background-color: #FFF2E7;
+    }
+    
+    #check {
+        display: none;
+    }
+    
+
+  
+    .nav-bar{
+        padding: 0;
+    }
+    ul {
+    
+        flex-direction: column;
+        padding: 20px;
+        width: 60%;
+        height: 100%;
+        top: 80px;
+        left: -100%;
+        position: fixed;
+        background-color: rgba(255, 255, 255, 0.077);
+        backdrop-filter: blur(1rem);  
+    }
+    .checkbtn span {
+        display: flex;
+        width: 30px;
+        height: 5px;
+        background-color: #FFF2E7;
+    
+    }
+   
+    #check:checked ~ ul{
+    left: 0;
+    
+}
+
+}
+
+
+
+/*---------------- MENU DE PESQUISA -----------------*/
+
+.loupe-white {
+    display: none;
+}
+
+.search-box {
+    display: flex;
+    justify-content: space-between;
+    left: 80%;
+    background: #FFF2E7;
+    border-radius: 40px;
+    align-items: center;
+    padding: 5px;
+ 
+
+}
+
+.search-box:hover > .search-text{/*quando eu passar o mouse o .search-text vai receber uma estilização*/
+    width: 250px;
+    padding-left: 20px;
+
+}
+.search-box:hover > .loupe-btn {
+    background: #7cb951;
+}
+.search-box:hover > .loupe-btn .loupe-preta {
+    display: none;
+}
+.search-box:hover > .loupe-btn .loupe-white {
+    display: block;
+}
+::-webkit-input-placeholder {
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #aeaeae;
+}
+
+.search-text {
+    background: none;
+    border: 0;
+    outline: 0;
+    font-size: 12px;
+    padding: 0px;
+    width: 0px;
+    transition: 0.4s;
+}
+.loupe-btn{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.banner {
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.banner video {
+    display: flex;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+
+}
+
+.rodape {
+    box-shadow: 4px 5px 4px 10px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    /*background-color: rgba(255, 255, 255, 0.364);
+    backdrop-filter: blur(1rem);  para deixar com efeito de borrado*/
+}
+
+.rodape-imagem {
+    height: 100px;
+    padding-top: 0px;
+
+}
+
+.rodape-texto {
+    font-family: 'sarala', sans-serif;
+    font-weight: 300;
+    font-size: 11px;
+    color: #FFF2E7
+    
+}
+
