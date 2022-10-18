@@ -8,6 +8,7 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+    
 }
 
 body {
@@ -16,9 +17,57 @@ body {
 }
 
 nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     background: black;
 }
 
+nav ul {
+    display: flex;
+    gap: 30px;
+
+}
+
+.ancora {
+    border-radius: 5px;
+    cursor:pointer ;
+    color: #FFF2E7;
+    padding: 5px;
+}
+
+.ancora.active, .ancora:hover {
+    background-color: #7cb951;
+    transition: .5s;
+    color: black;
+}
+
+.checkbtn {
+    color: #FFF2E7;
+    font-size: 30px;
+    cursor: pointer;
+    margin-right: 40px;
+    float: right;
+
+}
+#check {
+    display: none;
+}
+
+@media (max-width: 900px){
+
+    .search-box {
+        display: none;
+    }
+    
+    .ancora {
+        display: none;
+    }
+    .checkbtn {
+        display: block;
+    }
+   
+}
 
 
 
@@ -29,13 +78,10 @@ nav {
 }
 
 .search-box {
-    display: flex;
-    justify-content: space-between;
-    left: 80%;
-    background: #FFF2E7;
-    border-radius: 40px;
+  background: #FFF2E7;
+    border-radius: 50px;
     align-items: center;
-    padding: 5px;
+    padding: 2px;
  
 
 }
@@ -56,22 +102,23 @@ nav {
 }
 ::-webkit-input-placeholder {
     font-size: 16px;
-    font-family: 'Courier New', Courier, monospace;
     color: #aeaeae;
+    align-items: center;
 }
 
 .search-text {
+   
+    float: right;
+    padding-top: 13px;
     background: none;
     border: 0;
     outline: 0;
-    font-size: 12px;
-    padding: 0px;
-    width: 0px;
-    transition: 0.4s;
+   
+
 }
 .loupe-btn{
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
